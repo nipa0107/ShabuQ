@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/logo"
+        android:layout_width="700dp"
+        android:layout_height="700dp"
+        android:src="@drawable/suki1"
+        android:layout_marginTop="10dp"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAddLogin"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="550dp"
+        android:background="@drawable/edittext_border"
+        android:text="เข้าสู่ระบบ"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnRegister"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:text="สมัครสมาชิก"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittext_border"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:layout_below="@id/btnAddLogin" />
+
+</RelativeLayout >

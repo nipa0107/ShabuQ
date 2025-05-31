@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="MainActivity"
+    android:background="#EFEEEE">
+
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:id="@+id/product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="เข้าสู่ระบบ"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="25sp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/logo" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:background="#FFFFFF"
+        android:hint="อีเมล"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textSize="20sp"
+            android:background="#FFFFFF"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:hint="รหัสผ่าน"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textSize="20sp"
+            android:background="#FFFFFF" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Login"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:text="เข้าสู่ระบบ"
+        android:textSize="20sp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/edittext_border"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp" />
+</LinearLayout>

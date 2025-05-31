@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#EFEEEE"
+    android:orientation="vertical"
+    tools:context=".BookingDetailActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/r"
+        android:id="@+id/text1">
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="จองคิว"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:layout_centerHorizontal="true">
+        </TextView>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/showBooking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="หมายเลขคิว"
+        android:textColor="@color/black"
+        android:layout_below="@+id/text1"
+        android:padding="10dp"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/showName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="ชื่อผู้จอง"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:layout_below="@+id/showBooking"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/showCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="จำนวนคน"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/showName"
+        android:padding="10dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="*ขอสงวนสิทธิ์ในการข้ามคิว กรณีลูกค้าไม่แสดงตน"
+        android:layout_below="@+id/showCount"
+        android:layout_marginLeft="10dp"
+        android:textSize="17dp"
+        android:textColor="@color/redd"/>
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txt2"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edittext_border"
+        android:text="ยกเลิกคิว"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/r"
+        android:id="@+id/text2"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:id="@+id/backhome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="กลับสู่หน้าหลัก"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:layout_centerHorizontal="true">
+        </TextView>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

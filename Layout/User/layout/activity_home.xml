@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/bg"
+    tools:context="HomeActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/r">
+
+        <ImageButton
+            android:id="@+id/btnUserProfile"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/person" />
+        </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnBooking"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/edittext_border"
+        android:text="จองโต๊ะเลย"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemIconTint="#ffffff"
+        app:itemTextColor="#ffffff"
+        app:menu="@menu/bottom_nav_menu" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/pro1"
+        android:layout_width="349dp"
+        android:layout_height="158dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/btnBooking"
+        android:src="@drawable/pro5"></androidx.appcompat.widget.AppCompatImageView>
+
+    <ViewFlipper
+        android:id="@+id/Imgslide"
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:layout_below="@+id/pro1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:autoStart="true"
+        android:flipInterval="2000"
+        android:inAnimation="@android:anim/slide_in_left"
+        android:outAnimation="@android:anim/slide_out_right">
+
+        <ImageView
+            android:id="@+id/pro2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/pro2" />
+
+        <ImageView
+            android:id="@+id/pro3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/pro1"/>
+        <ImageView
+            android:id="@+id/pro4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/pro3"/>
+    </ViewFlipper>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="360dp"
+        android:layout_height="169dp"
+        android:layout_below="@+id/Imgslide"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/pro4">
+
+    </androidx.appcompat.widget.AppCompatImageView>
+
+</RelativeLayout>

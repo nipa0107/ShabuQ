@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg"
+    tools:context=".PromotionActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/r"
+        android:id="@+id/text1">
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="โปรโมชั่น"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:layout_centerHorizontal="true">
+        </TextView>
+    </RelativeLayout>
+
+<!--    <androidx.appcompat.widget.AppCompatImageView-->
+<!--        android:id="@+id/pro6"-->
+<!--        android:layout_width="285dp"-->
+<!--        android:layout_height="279dp"-->
+<!--        android:layout_below="@id/text1"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="50dp"-->
+<!--        android:src="@drawable/pro6"></androidx.appcompat.widget.AppCompatImageView>-->
+
+<!--    <androidx.appcompat.widget.AppCompatImageView-->
+<!--        android:id="@+id/pro7"-->
+<!--        android:layout_width="280dp"-->
+<!--        android:layout_height="280dp"-->
+<!--        android:layout_below="@id/pro6"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:src="@drawable/pro7">-->
+
+<!--    </androidx.appcompat.widget.AppCompatImageView>-->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemIconTint="#ffffff"
+        app:itemTextColor="#ffffff"
+        app:menu="@menu/bottom_nav_menu" />
+
+</RelativeLayout>
