@@ -1,6 +1,17 @@
 # ShabuQ
 
+![ShabuQ](ShabuQ.gif)
+
+
 Mini Project Mobile Device Programming
+
+Tech stack
+----------------
+- Kotlin
+- Android studio
+
+Member
+----------------
 
 1.643020407-8   ยุทธการ วรรณทอง  
 2.643020370-5   ณัฐริกา บุญช่วย  
